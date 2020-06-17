@@ -1,0 +1,32 @@
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.body{
+	margin:0 100px;
+}
+.path{
+	margin-left: 10px;
+}
+.body>.path>a{
+	color: black;
+	font-size: 13px;
+}
+.body-plate{
+}
+.body-img{
+	width: 47%;
+	float: left;
+}
+.body-img img{
+	padding: 5px 10px;
+}
+.body-img img:nth-child(3){
+	width: 500px;
+}
+.body-font{
+	width: 52%;
+	line-height: 30px;
+	font-size: 14px;
+	float: right;
+}

@@ -1,0 +1,137 @@
+        * {
+              margin:0 auto;
+            padding:0 auto;
+        }
+
+        ul {
+              list-style:none;
+        }
+        .loop{
+            position: relative;
+            margin:10px auto;
+            width:600px;
+            height:500px;
+            float: left;
+            padding: 20px;
+        }
+
+        #wrap {
+              position:relative;
+              width:600px;
+              height:400px;
+               border:1px solid #9cc5ef;
+               overflow:hidden;
+               border-radius: 16px;
+        }
+
+        #slider {
+              width:300%;
+              height:100%;
+              font:100px/400px Microsoft Yahei;
+              text-align:center;
+              color:#fff;
+              margin-left:0;
+              -webkit-animation:slide1 8s ease-out infinite;
+        }
+
+        #slider li {
+              float:left;
+              width:600px;
+              height:400px;
+        }
+        #slider img{
+             width:600px;
+             height:400px;
+             margin-left: -80px;
+        }
+        /*创建三种动画策略*/
+        @-webkit-keyframes slide1 {
+          0% { margin-left:0;}
+          23% { margin-left:0;}
+          33% { margin-left:-600px;}
+          56% { margin-left:-600px;}
+          66% { margin-left:-1200px;}
+          90% { margin-left:-1200px;}
+          100% {margin-left:0;}
+        }
+
+        @-webkit-keyframes slide2 {
+          0% { margin-left:-600px;}
+          23% { margin-left:-600px;}
+          33% { margin-left:-1200px;}
+          56% { margin-left:-1200px;}
+          66% { margin-left:0;}
+          90% { margin-left:0;}
+          100% {margin-left:-600px;}
+        }
+
+        @-webkit-keyframes slide3 {
+          0% { margin-left:-1200px;}
+          23% { margin-left:-1200px;}
+          33% { margin-left:0;}
+          56% { margin-left:0;}
+          66% { margin-left:-600px;}
+          90% { margin-left:-600px;}
+          100% {margin-left:-1200px;}
+        }
+
+
+        /*当我们点击对应按钮时显示对应的动画*/
+        #first:checked ~ #wrap #slider {
+          -webkit-animation-name:slide1;
+        }
+
+        #second:checked ~ #wrap #slider {
+          -webkit-animation-name:slide2;
+        }
+
+        #third:checked ~ #wrap #slider {
+          -webkit-animation-name:slide3;
+        }
+
+
+        /*短暂地取消动画名称，模拟重启动画*/
+        #first:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:0;
+        }
+
+        #second:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:-600px;
+        }
+
+        #third:active ~ #wrap #slider {
+          -webkit-animation-name:none;
+          margin-left:-1200px;
+        }
+        #opts {
+          width:600px;
+          height:40px;
+          margin:auto;
+          color:rgba(255,255,255,0.5);
+          text-align:center;
+          font:16px/30px Microsoft Yahei;
+          position: absolute;
+          top: 380px;
+          left: 250px;
+        }
+
+        #opts label {
+          float:left;
+          width:30px;
+          height:30px;
+          margin-right:10px;
+          background:rgba(190,190,190,0.3);
+          cursor:pointer;
+          border-radius: 50%;
+        }
+
+        #opts label:hover {
+          background:#405871;
+        }
+
+        /* 隐藏Input按钮*/
+        #first, #second, #third {
+          display:none;
+        }

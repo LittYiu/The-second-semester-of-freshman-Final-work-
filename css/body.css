@@ -1,0 +1,177 @@
+*{
+	margin:0 auto;
+	padding: 0 auto;
+	text-decoration: none;
+}
+.main{
+	background-image:url(../img/bg-img.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+.main>img{
+
+}
+.center{
+	margin-top: 200px;
+	background: rgba(105,105,105,0.6);
+	width: 100%;
+	height:400px;
+}
+.center div:first-child{
+	margin-left: 60px;
+}
+.center div{
+	float: left;
+	padding: 30px 30px;
+}
+.img1{
+	width: 270px;
+	height: 270px;
+	margin-left: 60px;
+	display: inline-block;
+	margin-bottom: 50px;
+	background: url(http://image.fast.126net.cn/group2/M00/01/9B/wKgADlu6wVeAAcWZAADXmkzRvso186.png);
+
+}
+.img2{
+	width: 270px;
+	height: 270px;
+	margin-left: 60px;
+	display: inline-block;
+	margin-bottom: 50px;
+	background: url(http://image.fast.126net.cn/group1/M00/04/5B/wKgADFu6w66AToXjAAG7DLDvtOs921.png);
+}
+.img3{
+	width: 270px;
+	height: 270px;
+	margin-left: 60px;
+	display: inline-block;
+	margin-bottom: 50px;
+
+	background: url(http://image.fast.126net.cn/group2/M00/01/9B/wKgADlu6w26AHcpsAAFWYEGZ3us183.png);
+}
+.font1{
+	font-size: 36px;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: -200px;
+}
+.booth{
+	background: url(http://image.fast.126net.cn/group1/M00/04/5B/wKgADFu6xuiAA-hZAAHP8bFUZUI662.jpg);
+	width: 96%;
+	height: 459px;
+	background-size: cover;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-radius: 16px;
+}
+.text-demo{
+	width: 550px;
+	display: inline-block;
+	padding: 30px 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.text-demo>h2{
+	padding-bottom: 30px;
+	border-bottom: 2px solid black;
+}
+.text-demo>p{
+	line-height: 28px;
+	color: rgba(25,25,25,0.8);
+	padding-top: 10px;
+	font-size: 14px;
+}
+.more{
+	width: 100px;
+	height: 40px;
+	border:2px solid rgba(238,99,99,0.9);
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+}
+.more>a{
+	display: inline-block;
+	width: 100px;
+	color: rgba(238,99,99,0.9);
+}
+.more>a:hover{
+	color: #fff;
+	background-color: rgba(238,99,99,0.9);
+}
+.text-demo h2::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-color: #000;
+	display: inline-block;
+	border-radius: 16px;
+	margin-right: 10px;
+}
+.kehufuwu{
+	background: rgba(0,0,0,0.2);
+	height: 110px; 
+}
+.kehufuwu-bg{
+	background-image: url(../img/客户服务.png);
+	background-position: center;   
+    height: 110px;
+    background-repeat: no-repeat;
+    border:1px 0 solid blue;
+    border-top: 3px solid #bebebe;
+    border-bottom: 3px solid #bebebe;
+}
+.kehufuwu-font{
+}
+.last{
+	padding: 25px 0px 10px 100px;
+}
+.box{
+	width: 26%;
+	height: 300px;
+	float: left;
+	padding: 0px 0px 0px 40px;
+}
+.k123{
+	font-size: 36px;
+	width: 96%;
+	height: 110px;
+	line-height: 110px;
+}
+.box>p{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.box>div{
+	width: 320px;
+	height: 36px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: rgba(0,0,0,0.6);
+	font-size: 14px;
+}
+.clear{
+	clear: both;
+}
+.more2{
+	width: 100px;
+	height: 40px;
+	border:2px solid rgba(238,99,99,0.9);
+	text-align: center;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-left: 515px;
+}
+.more2>a{
+	display: inline-block;
+	width: 100px;
+	color: rgba(238,99,99,0.9);
+}
+.more2>a:hover{
+	color: #fff;
+	background-color: rgba(238,99,99,0.9);
+}
